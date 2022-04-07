@@ -1,0 +1,32 @@
+{
+    "name": "show-balance-of-payments-java",
+    "workspaceFolder": "/app",
+    "dockerComposeFile": "../docker-compose.yml",
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "bash"
+            },
+            "zsh": {
+                "path": "zsh"
+            },
+            "fish": {
+                "path": "fish"
+            },
+            "tmux": {
+                "path": "tmux",
+                "icon": "terminal-tmux"
+            },
+            "pwsh": {
+                "path": "pwsh",
+                "icon": "terminal-powershell"
+            }
+        }
+    },
+    "service": "api", //attachするコンテナはspringを指定
+    "extensions": [
+        "vscjava.vscode-java-pack", // JavaExtensionPack
+        "pivotal.vscode-boot-dev-pack", // Spring Boot Extension Pack
+        "gabrielbb.vscode-lombok" //Lombok Annotations Support For VS Code
+    ],
+}
