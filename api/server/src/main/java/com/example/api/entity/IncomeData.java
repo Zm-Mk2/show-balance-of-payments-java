@@ -9,6 +9,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import lombok.Data;
+import java.util.Date;
 
 @Entity
 @Table(name = "incomedatas")
@@ -21,7 +22,7 @@ public class IncomeData {
 
   @Temporal(TemporalType.DATE)
   @Column(nullable = false)
-  private java.util.Date date;
+  private Date date;
 
   private String content;
 
@@ -33,9 +34,9 @@ public class IncomeData {
   private String mitem;
   
   @Temporal(TemporalType.TIMESTAMP)
-  private java.util.Date created_at;
+  private Date created_at;
   
   @Temporal(TemporalType.TIMESTAMP)
-  private java.util.Date updated_at;
+  private Date updated_at;
 
 }

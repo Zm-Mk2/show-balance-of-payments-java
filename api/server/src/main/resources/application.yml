@@ -4,3 +4,8 @@ spring:
     username: root
     password: root
     driver-class-name: org.postgresql.Driver
+
+logging.level.org.hibernate:
+  SQL: DEBUG
+  type.descriptor.sql.BasicBinder: TRACE
+  
